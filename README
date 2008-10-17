@@ -7,8 +7,8 @@ Mostrando para o desenvolvedor informações a respeito das variáveis params e 
 Instalação
 ==========
 Para instalar rode o comando:
-	#TODO: arrumar url de instalação
-	ruby script/plugin install [pagina]
+
+	ruby script/plugin install git://github.com/dannnylo/what_i_take.git
 
 Utilizando
 ============
