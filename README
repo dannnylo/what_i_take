@@ -1,0 +1,35 @@
+WhatITake
+=========
+
+Este plugin ajuda no desenvolvimento das aplicações rails, atuando como debuger das views.
+Mostrando para o desenvolvedor informações a respeito das variáveis params e session.
+
+Instalação
+==========
+Para instalar rode o comando:
+	#TODO: arrumar url de instalação
+	ruby script/plugin install [pagina]
+
+Utilizando
+============
+Para utilizar é muito simples, adicione a linha abaixo na view desejada ou então no layout.
+	<%= what_i_take? %>
+e então sempre que quiser visualizar estas informações é necessário apenas utilizar a tecla atalho CTRL + D.
+
+Alterando Tecla Atalho
+============
+Para alterar a tecla atalho, abra o arquivo what_i_take e altere o valor da linha:
+	
+	TECLA_ATALHO="CTRL+ALT+d"
+
+
+======
+Algumas partes deste plugin foram tiradas do plugin debug-view-helper disponível no site:
+http://www.realityforge.org/svn/public/code/debug-view-helper/trunk/
+===== 
+
+=====
+Se você quiser contibuir com alguma idéia ou melhoria fique a vontade.
+=====
+
+Copyright (c) 2008 Danilo Jeremias da Silva, released under the MIT license

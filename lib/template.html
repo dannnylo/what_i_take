@@ -1,0 +1,41 @@
+<script type="text/javascript">
+//<![CDATA[
+	var what_i_take=false;
+
+	shortcut.add("#TECLA_ATALHO#",function() 
+	{	
+		if(what_i_take!=true){
+			$('div_what_i_take').appear();
+			what_i_take=true;
+		}else{
+			$('div_what_i_take').hide();
+			what_i_take=false;
+		}	
+	});
+	
+	function view_what_i_take(nome){
+		$('index_what_i_take').hide();
+		$('params_what_i_take').hide();
+		$('session_what_i_take').hide();
+		/*#TODO:Implementar Flash*/
+		/*$('flash_what_i_take').hide();*/
+		
+		$(nome+'_what_i_take').show();
+	}
+	var jwhat_i_take;
+//]]>
+</script>
+
+<div id='div_what_i_take' style='position:absolute; top:10px;	left:10px; height:200px; width:450px;background-color:#fff;display:none; z-index:9999999;border:1px solid #eee;padding:10px;padding-top:0px;'>
+		<div style="height:10px;border:1px solid #eee;" onmousedown="jwhat_i_take= new Draggable('div_what_i_take',{handle: 'handle',starteffect:false });" onmouseup="jwhat_i_take.destroy();$('div_what_i_take').appear();">&nbsp;</div>
+		<span style='padding-right:10px;'>#LINK_TO_INDEX#</span>
+		<span style='padding-right:10px;'>#LINK_TO_PARAMS#</span>
+		<span style='padding-right:10px;'>#LINK_TO_SESSION#</span>
+		<hr style='color:#eee;'/>
+	<div style='overflow-x:auto;width:100%;height:175px;'>
+		<div id='index_what_i_take'>#INDEX#</div>
+		<div id='params_what_i_take' style='display:none;'>#PARAMS#</div>
+		<div id='session_what_i_take' style='display:none;'>#SESSION#</div>
+	</div>
+</div>
+
